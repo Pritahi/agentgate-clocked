@@ -1,1 +1,14 @@
-{ "name": "agentgate", "version": "1.0.0", "private": true, "scripts": { "dev": "node server.js" } }
+{
+  "name": "agentgate",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "test": "node --test test/*.test.js",
+    "benchmark": "node test/live.js",
+    "benchmark:challenge": "node test/challenge.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
